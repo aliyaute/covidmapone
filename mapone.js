@@ -35,19 +35,19 @@ map.on('load', function () {
         },
         'source': {
             'type': 'geojson',
-            'data': 'data/new_race_NM_Data.geojson'
+            'data': 'data/correct.geojson'
 
         },
 
         'paint': {
             'fill-color': [
                 'case', 
-                ['==',['get', 'Poverty_Category_Code'], 6], '#a63603',
-                ['==',['get', 'Poverty_Category_Code'], 5], '#d94801',
-                ['==',['get', 'Poverty_Category_Code'], 4], '#fdae6b',
-                ['==',['get', 'Poverty_Category_Code'], 3], '#fdd0a2', 
-                ['==',['get', 'Poverty_Category_Code'], 2], '#fee6ce',
-                ['==',['get', 'Poverty_Category_Code'], 1], '#fee6ce',
+                ['==',['get', 'poverty_category'], 6], '#7f2704',
+                ['==',['get', 'poverty_category'], 5], '#d94801',
+                ['==',['get', 'poverty_category'], 4], '#fd8d3c',
+                ['==',['get', 'poverty_category'], 3], '#fdae6b', 
+                ['==',['get', 'poverty_category'], 2], '#fdd0a2',
+                ['==',['get', 'poverty_category'], 1], '#fee8c8',
                 // ['==',['get', 'Poverty_Category_Code'], 0], '#fee6ce',
                 '#d3d3d3',
             ],
@@ -77,7 +77,7 @@ map.on('click', 'Poverty Level', function (e) {
     var NAMELSAD = e.features[0].properties.NAMELSAD;
     // var Area = e.features[0].properties.Area;
     var Number_of_Cases = e.features[0].properties.Number_of_Cases;
-    var Percent = e.features[0].properties.Percent;
+    var percent_correct = e.features[0].properties.percent_correct;
     var Percentage_in_Poverty = e.features[0].properties.Percentage_in_Poverty;
     var Population_Size = e.features[0].properties.Population_Size;
     var Percent_White = e.features[0].properties.Percent_White;
@@ -86,9 +86,9 @@ map.on('click', 'Poverty Level', function (e) {
     var Percent_Hispanic = e.features[0].properties.Percent_Hispanic;
     var Percent_Asian = e.features[0].properties.Percent_Asian;
     var Other_Percent = e.features[0].properties.Other_Percent;
-    Percent = (Percent* 100).toFixed(0);
-    if (Percent < 1) {
-        Percent = "< 1";
+    percent_correct = (percent_correct* 100).toFixed(0);
+    if (percent_correct < 1) {
+        percent_correct = "< 1";
       }
     if (Percent_Asian < 1) {
         Percent_Asian = "< 1";
@@ -110,10 +110,10 @@ map.on('click', 'Poverty Level', function (e) {
     County = County.toUpperCase().bold();
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<h4>' + County + '</h4>'
+        .setHTML('<h4>' + County + ' COUNTY </h4>'
             + '<p>' + NAMELSAD + '</p>'
             + '<p>' + Percentage_in_Poverty  + '% live in poverty </p>'
-            + '<h2>' + Number_of_Cases + ' cases (' + Percent + '%) </h2>'
+            + '<h2>' + Number_of_Cases + ' cases (' + percent_correct + '%) </h2>'
             + '<p>' + 'population: ' + Population_Size + '</p>'
             + '<p>' + 'White: ' + Percent_White + '% </p>'
             + '<p>' + 'African American: ' + Percent_Black + '% </p>'
