@@ -1,4 +1,4 @@
-// map one
+// map one upd Dec. 30
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpeWF1dGUiLCJhIjoiY2p5ZXp1b3ZyMDBpMTNjcjdnZ3dnbzJpYyJ9.UiTAUN2b8ASlVnMr_nmn3Q';
 var map = new mapboxgl.Map({
     container: 'map',
