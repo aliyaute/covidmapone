@@ -35,7 +35,7 @@ map.on('load', function () {
         },
         'source': {
             'type': 'geojson',
-            'data': 'data/correct.geojson'
+            'data': 'data/upd_data122620.geojson'
 
         },
 
@@ -64,7 +64,7 @@ map.on('load', function () {
         },
         'source': {
           'type': 'geojson',
-          'data': 'data/correct.geojson'
+          'data': 'data/upd_data122620.geojson'
         },
         'paint': {
           'line-color': '#737373',
@@ -84,7 +84,7 @@ map.on('click', 'Poverty Level', function (e) {
     var NAMELSAD = e.features[0].properties.NAMELSAD;
     // var Area = e.features[0].properties.Area;
     var Number_of_Cases = e.features[0].properties.Number_of_Cases;
-    var percent_correct = e.features[0].properties.percent_correct;
+    var percent = e.features[0].properties.percent;
     var Percentage_in_Poverty = e.features[0].properties.Percentage_in_Poverty;
     var Population_Size = e.features[0].properties.Population_Size;
     var Percent_White = e.features[0].properties.Percent_White;
@@ -93,9 +93,9 @@ map.on('click', 'Poverty Level', function (e) {
     var Percent_Hispanic = e.features[0].properties.Percent_Hispanic;
     var Percent_Asian = e.features[0].properties.Percent_Asian;
     var Other_Percent = e.features[0].properties.Other_Percent;
-    percent_correct = (percent_correct* 100).toFixed(0);
-    if (percent_correct < 1) {
-        percent_correct = "< 1";
+    percent = (percent* 100).toFixed(1);
+    if (percent < 1) {
+        percent = "< 1";
       }
     if (Percent_Asian < 1) {
         Percent_Asian = "< 1";
@@ -120,7 +120,7 @@ map.on('click', 'Poverty Level', function (e) {
         .setHTML('<h4>' + County + ' COUNTY </h4>'
             + '<p>' + NAMELSAD + '</p>'
             + '<p>' + Percentage_in_Poverty  + '% live in poverty </p>'
-            + '<h2>' + Number_of_Cases + ' cases (' + percent_correct + '%) </h2>'
+            + '<h2>' + Number_of_Cases + ' cases (' + percent + '%) </h2>'
             + '<p>' + 'population: ' + Population_Size + '</p>'
             + '<p>' + 'White: ' + Percent_White + '% </p>'
             + '<p>' + 'Black/African American: ' + Percent_Black + '% </p>'
