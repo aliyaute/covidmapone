@@ -93,7 +93,7 @@ map.on('click', 'Poverty Level', function (e) {
     var Percent_Hispanic = e.features[0].properties.Percent_Hispanic;
     var Percent_Asian = e.features[0].properties.Percent_Asian;
     var Other_Percent = e.features[0].properties.Other_Percent;
-    percent = (percent* 100).toFixed(1);
+    percent = (percent* 100).toFixed(2);
     if (percent < 1) {
         percent = "< 1";
       }
