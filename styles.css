@@ -8,7 +8,7 @@ body {
     width: 80%;
     height: 800px;
     margin: 5em auto;
-    margin-top: 2.5em;
+    margin-top: 1.2em;
     margin-bottom: 0.1em;
 
 
@@ -54,7 +54,7 @@ bottom: 0px;
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 font: 12px/15px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 padding: 4px;
-position: fixed;
+position: absolute;
 right: 0px;
 z-index: 1;
 margin-bottom: 1.1em;
@@ -77,31 +77,45 @@ h1 {
     color: #323131; 
     font-family: "Helvetica Neue",Arial,sans-serif; 
     font-size: 24px; 
-    font-weight: normal; 
+    font-weight: bold; 
     line-height: 50px; 
     margin-right: 5px;
     margin-top: 1em;
-    margin-left: 350px;
+    margin-left: 345px;
 
 }
+
 
 h5 { 
-    color: #3F3D3D; 
+    color: #252525; 
     font-family: 'Lato', sans-serif;
-    font-size: 14px; 
+    font-size: 16.5px; 
     font-weight: normal; 
-    line-height: 20px; 
-    margin-right: 195px;
-    margin-left: 195px;
-
+    line-height: 5px; 
+    margin-right: 180px;
+    margin-left: 200px;
+    margin-top: 1em;
+    margin-bottom: 0em;
 
 }
 
+h6 { 
+    color: #525252; 
+    font-family: 'Lato Italic', sans-serif;
+    font-size: 13.5px; 
+    font-weight: normal; 
+    line-height: 17px; 
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
 
+
+}
 
 h3 { 
     color: #3F3D3D; 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato Italic', sans-serif;
     font-size: 14px; 
     font-weight: normal; 
     line-height: 20px; 
@@ -121,27 +135,27 @@ h3 {
     right: 0px;
     z-index: 1; */
 fieldset {
-        background-color: white;
-        border-radius: 0.5px;
-        bottom: 0px;
-        border: 25px;
-        box-shadow: 0 1px 1px hsl(0, 5%, 96%);
-        font: 12px/15px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        padding: 1px;
-        position: fixed;
-        right: 0px;
-        z-index: 1;
+    background-color: white;
+    border-radius: 0.5px;
+    bottom: 0px;
+    border: 25px;
+    box-shadow: 0 1px 1px hsl(0, 5%, 96%);
+    font: 12px/15px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 1px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
 }
 
 fieldset legend {
-    background: lightgre;
-    color: black;
-    padding: 3px 14px ;
-    font-size: 13px;
-    border-radius: 5px;
-    box-shadow: 0 0 0 2px #ddd;
-    margin-left: 0.5px;
-    
+background: #1F497D;
+color: #fff;
+padding: 3px 14px ;
+font-size: 13px;
+border-radius: 5px;
+box-shadow: 0 0 0 2px #ddd;
+margin-left: 0.5px;
+
 }
 
 
