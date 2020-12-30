@@ -93,7 +93,7 @@ map.on('click', 'Poverty Level', function (e) {
     var Percent_Hispanic = e.features[0].properties.Percent_Hispanic;
     var Percent_Asian = e.features[0].properties.Percent_Asian;
     var Other_Percent = e.features[0].properties.Other_Percent;
-    percent = (percent* 100).toFixed(2);
+    percent = (percent* 100).toFixed(1);
     if (percent < 1) {
         percent = "< 1";
       }
@@ -112,7 +112,7 @@ map.on('click', 'Poverty Level', function (e) {
     if (Other_Percent < 1) {
         Other_Percent = "< 1";
       }
-    Percentage_in_Poverty = (Percentage_in_Poverty* 100).toFixed(0);
+    Percentage_in_Poverty = (Percentage_in_Poverty* 100).toFixed(1);
     Number_of_Cases = Number_of_Cases.toLocaleString();
     County = County.toUpperCase().bold();
     new mapboxgl.Popup()
