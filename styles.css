@@ -8,7 +8,7 @@ body {
     width: 80%;
     height: 800px;
     margin: 5em auto;
-    margin-top: 1.2em;
+    margin-top: 1.5em;
     margin-bottom: 0.1em;
 
 
@@ -89,7 +89,7 @@ h1 {
     font-family: "Helvetica Neue",Arial,sans-serif; 
     font-size: 24px; 
     font-weight: bold; 
-    line-height: 50px; 
+    line-height: 40px; 
     margin-right: 5px;
     margin-top: 1em;
     margin-left: 345px;
@@ -106,20 +106,17 @@ h5 {
     position: relative;
     margin-left: 185px;
     margin-top: 1em;
-    margin-bottom: 2em;
 
 }
 
 h6 { 
-    color: #525252; 
+    color: #323131; 
     font-family: 'Lato Italic', sans-serif;
-    font-size: 15px; 
+    font-size: 14.2px; 
     font-weight: normal; 
-    line-height: 18px; 
-    margin-right: 160px;
-    margin-left: 160px;
-    margin-top: 1.5em;
-    margin-bottom: 0em;
+    line-height: 19px; 
+    margin-right: 208px;
+    margin-left: 208px;
 
 
 }
