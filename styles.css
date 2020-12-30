@@ -172,10 +172,15 @@ margin-left: 0.5px;
 @media only screen and (max-width: 415px) {
 
     h1 {
-        font-size : 7vmin;
+        font-size: 3.5vmin;
         line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
         margin: 0;
         padding: 0;
+        margin-top: 1.5em;
+        margin-left: 51px;
+        margin-left: 5px;
+
+
     }
       h6 {
         font-size: 3.5vmin;
@@ -183,6 +188,8 @@ margin-left: 0.5px;
         margin: 0;
         padding: 0;
         margin-top: 1.5em;
+        margin-left: 9px;
+
 
       }
       h3 {
@@ -253,7 +260,6 @@ margin-left: 0.5px;
   
     }
     }
-
 
 
     @media only screen and (max-width: 1024px) {
