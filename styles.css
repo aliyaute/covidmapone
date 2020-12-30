@@ -269,6 +269,43 @@ margin-left: 0.5px;
 
         h1 { 
 
-            margin-left: 230px;
+            margin-left: 110px;
+            margin-right: 70px;
         }
+
+        h3 {
+
+            margin-left: 6px;
+    
+          }
+    
+          h6 {
+
+            margin-top: 1.5em;
+            margin-left: 50px;
+            margin-right: 50px;
+          }
+
+          fieldset legend{
+            left: 100px;
+            display: none;
+            margin-left: 2px;
+            font-size:1px;
+    
+            }
+    
+            fieldset label{
+                left: 100px;
+                display: none;
+                margin-left: 2px;
+                font-size:1px;
+            }    
+    
+            fieldset{
+                left: 100px;
+                display: none;
+                height: 0px;
+                display: inline-block;
+                margin-left: 2px;
+            }
         }
