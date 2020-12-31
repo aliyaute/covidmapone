@@ -169,22 +169,23 @@ box-shadow: 0 0 0 2px #ddd;
 margin-left: 0.5px;
 
 }
+/* iphone */
 @media only screen and (max-width: 415px) {
 
     h1 {
-        font-size: 3.5vmin;
+        font-size: 3.2vmin;
         line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-        margin: 0, 0, 10;
+        margin: 0;
         padding: 0;
         margin-top: 1.5em;
-        margin-left: 1px;
+        margin-left: 15px;
         margin-right: 10px;
 
 
 
     }
       h6 {
-        font-size: 3.5vmin;
+        font-size: 3vmin;
         line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
         margin: 0;
         padding: 0;
@@ -201,6 +202,7 @@ margin-left: 0.5px;
         margin-left: 9px;
 
       }
+
 
       .legend {
         background-color: #fff;
@@ -257,57 +259,57 @@ margin-left: 0.5px;
         margin: 1em auto;
         padding: 1em;
         margin-top: 1.5em;
-        margin-bottom: 0.1em;
+        margin-bottom: 1.1em;
     
   
     }
     }
 
+/* ipad */
+@media only screen and (max-width: 1024px) {
+    .legend {
+        position: fixed;
+    }
 
-    @media only screen and (max-width: 1024px) {
-        .legend {
-            position: fixed;
+    h1 { 
+
+        margin-left: 18px;
+        margin-right: 10px;
+    }
+
+    h3 {
+
+        margin-left: 9px;
+
+      }
+
+      h6 {
+
+        margin-top: 1.5em;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      fieldset legend{
+        left: 100px;
+        display: none;
+        margin-left: 2px;
+        font-size:1px;
+
         }
 
-        h1 { 
-
-            margin-left: 110px;
-            margin-right: 70px;
-        }
-
-        h3 {
-
-            margin-left: 6px;
-    
-          }
-    
-          h6 {
-
-            margin-top: 1.5em;
-            margin-left: 50px;
-            margin-right: 50px;
-          }
-
-          fieldset legend{
+        fieldset label{
             left: 100px;
             display: none;
             margin-left: 2px;
             font-size:1px;
-    
-            }
-    
-            fieldset label{
-                left: 100px;
-                display: none;
-                margin-left: 2px;
-                font-size:1px;
-            }    
-    
-            fieldset{
-                left: 100px;
-                display: none;
-                height: 0px;
-                display: inline-block;
-                margin-left: 2px;
-            }
+        }    
+
+        fieldset{
+            left: 100px;
+            display: none;
+            height: 0px;
+            display: inline-block;
+            margin-left: 2px;
         }
+    }
